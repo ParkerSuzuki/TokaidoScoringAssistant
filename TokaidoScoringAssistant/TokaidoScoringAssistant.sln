@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34511.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokaidoScoringAssistant", "TokaidoScoringAssistant\TokaidoScoringAssistant.csproj", "{442F82E1-7A54-444A-A338-7DC9DEA32F17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TokaidoScoringAssistant.Client", "TokaidoScoringAssistant.Client\TokaidoScoringAssistant.Client.csproj", "{93382444-476D-4B82-93AE-2C22A109F72C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FC16DCBE-3F55-40A3-95D8-49135945BAA8}"
+	ProjectSection(SolutionItems) = preProject
+		TokaidoScorer.cs = TokaidoScorer.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{442F82E1-7A54-444A-A338-7DC9DEA32F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{442F82E1-7A54-444A-A338-7DC9DEA32F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{442F82E1-7A54-444A-A338-7DC9DEA32F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{442F82E1-7A54-444A-A338-7DC9DEA32F17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93382444-476D-4B82-93AE-2C22A109F72C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93382444-476D-4B82-93AE-2C22A109F72C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93382444-476D-4B82-93AE-2C22A109F72C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93382444-476D-4B82-93AE-2C22A109F72C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3BBC0B24-6F95-473F-988B-4EF3331C1108}
+	EndGlobalSection
+EndGlobal
