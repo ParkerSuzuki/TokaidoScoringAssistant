@@ -1,4 +1,3 @@
-using TokaidoScoringAssistant.Client.Pages;
 using TokaidoScoringAssistant.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,7 +28,6 @@ app.UseAntiforgery();
 
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode()
-    .AddInteractiveWebAssemblyRenderMode()
-    .AddAdditionalAssemblies(typeof(TokaidoScoringAssistant.Client._Imports).Assembly);
+    .AddInteractiveWebAssemblyRenderMode();
 
 app.Run();

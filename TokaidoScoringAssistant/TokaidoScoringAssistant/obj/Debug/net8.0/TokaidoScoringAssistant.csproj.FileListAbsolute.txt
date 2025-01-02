@@ -54,7 +54,6 @@ C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\TSA\TokaidoScoringAssistan
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\obj\Debug\net8.0\TokaidoScoringAssistant.pdb
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\obj\Debug\net8.0\TokaidoScoringAssistant.genruntimeconfig.cache
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\obj\Debug\net8.0\ref\TokaidoScoringAssistant.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\TokaidoScoringAssistant.Client.staticwebassets.runtime.json
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\appsettings.json
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.dll
@@ -74,19 +73,7 @@ C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssist
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\TokaidoScoringAssistant.runtimeconfig.json
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\TokaidoScoringAssistant.dll
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\TokaidoScoringAssistant.pdb
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.dll
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.JSInterop.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\Microsoft.JSInterop.WebAssembly.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\TokaidoScoringAssistant.Client.dll
-C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\bin\Debug\net8.0\TokaidoScoringAssistant.Client.pdb
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\obj\Debug\net8.0\TokaidoScoringAssistant.csproj.AssemblyReference.cache
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\obj\Debug\net8.0\TokaidoScoringAssistant.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\suzuk\Documents\YearOf52\ProgrammingProjects\1-TSA\TokaidoScoringAssistant\TokaidoScoringAssistant\obj\Debug\net8.0\TokaidoScoringAssistant.AssemblyInfoInputs.cache
