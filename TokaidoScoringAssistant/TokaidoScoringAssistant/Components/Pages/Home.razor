@@ -1,7 +1,729 @@
 ﻿@page "/"
+@rendermode InteractiveServer
+@using TokaidoScorer
 
-<PageTitle>Home</PageTitle>
+<!-- Travelers -->
+<div class="image-row">
+    <img src="images/umegae.jpg"
+         class="@umegaeClass"
+         @onclick="ToggleUmegaeSelection" />
+    <img src="images/mitsukuni.jpg"
+         class="@mitsukuniClass"
+         @onclick="ToggleMitsukuniSelection" />
+</div>
 
-<h1>Hello, world!</h1>
+<!-- Panoramas -->
+<h2>Panorama Points: @panoPoints</h2>
+<div>
+    <!-- Paddys -->
+    <div class="image-row">
+        <img src="images/paddy1.jpg"
+             class="@paddySelected[0]"
+             @onclick="() => TogglePaddySelection(1)" />
+        <img src="images/paddy2.jpg"
+             class="@paddySelected[1]"
+             @onclick="() => TogglePaddySelection(2)" />
+        <img src="images/paddy3.jpg"
+             class="@paddySelected[2]"
+             @onclick="() => TogglePaddySelection(3)" />
+    </div>
 
-Welcome to your new app.
+    <!-- Mountains -->
+    <div class="image-row">
+        <img src="images/mountain1.jpg"
+             class="@mountainSelected[0]"
+             @onclick="() => ToggleMountainSelection(1)" />
+        <img src="images/mountain2.jpg"
+             class="@mountainSelected[1]"
+             @onclick="() => ToggleMountainSelection(2)" />
+        <img src="images/mountain3.jpg"
+             class="@mountainSelected[2]"
+             @onclick="() => ToggleMountainSelection(3)" />
+        <img src="images/mountain4.jpg"
+             class="@mountainSelected[3]"
+             @onclick="() => ToggleMountainSelection(4)" />
+    </div>
+
+    <!-- Seas -->
+    <div class="image-row">
+        <img src="images/sea1.jpg"
+             class="@seaSelected[0]"
+             @onclick="() => ToggleSeaSelection(1)" />
+        <img src="images/sea2.jpg"
+             class="@seaSelected[1]"
+             @onclick="() => ToggleSeaSelection(2)" />
+        <img src="images/sea3.jpg"
+             class="@seaSelected[2]"
+             @onclick="() => ToggleSeaSelection(3)" />
+        <img src="images/sea4.jpg"
+             class="@seaSelected[3]"
+             @onclick="() => ToggleSeaSelection(4)" />
+        <img src="images/sea5.jpg"
+             class="@seaSelected[4]"
+             @onclick="() => ToggleSeaSelection(5)" />
+    </div>
+</div>
+
+<!-- Souvenirs -->
+<h2>Souvenir Points: @souvPoints</h2>
+<div class="image-row">
+    <!-- Small Objects -->
+    <div class="control-container">
+        <img src="images/smallObjects.jpg"
+             class="square-image"
+             @onclick="() => IncrementSouvenir(0)" />
+        <div class="controls">
+            <button @onclick="() => DecrementSouvenir(0)">-</button>
+            <span>@smallObjectCount</span>
+            <button @onclick="() => IncrementSouvenir(0)">+</button>
+        </div>
+    </div>
+
+    <!-- Clothing -->
+    <div class="control-container">
+        <img src="images/clothing.jpg"
+             class="square-image"
+             @onclick="() => IncrementSouvenir(1)" />
+        <div class="controls">
+            <button @onclick="() => DecrementSouvenir(1)">-</button>
+            <span>@clothingCount</span>
+            <button @onclick="() => IncrementSouvenir(1)">+</button>
+        </div>
+    </div>
+
+    <!-- Art -->
+    <div class="control-container">
+        <img id="art" src="images/art.jpg"
+             class="square-image"
+             @onclick="() => IncrementSouvenir(2)" />
+        <div class="controls">
+            <button @onclick="() => DecrementSouvenir(2)">-</button>
+            <span>@artCount</span>
+            <button @onclick="() => IncrementSouvenir(2)">+</button>
+        </div>
+    </div>
+
+    <!-- Food -->
+    <div class="control-container">
+        <img id="food" src="images/food.jpg"
+             class="square-image"
+             @onclick="() => IncrementSouvenir(3)" />
+        <div class="controls">
+            <button @onclick="() => DecrementSouvenir(3)">-</button>
+            <span>@foodCount</span>
+            <button @onclick="() => IncrementSouvenir(3)">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Hot Springs -->
+<h2>Hot Spring Points: @hsPoints</h2>
+<div class="image-row">
+    <!-- Hot Spring 2 -->
+    <div class="control-container">
+        <img src="images/hotspring2.jpg"
+             class="rectangle-image"
+             @onclick="() => IncrementHotSpring(2)" />
+        <div class="controls">
+            <button @onclick="() => DecrementHotSpring(2)">-</button>
+            <span>@hotspring2Count</span>
+            <button @onclick="() => IncrementHotSpring(2)">+</button>
+        </div>
+    </div>
+
+    <!-- Hot Spring 3 -->
+    <div class="control-container">
+        <img src="images/hotspring3.jpg"
+             class="rectangle-image"
+             @onclick="() => IncrementHotSpring(3)" />
+        <div class="controls">
+            <button @onclick="() => DecrementHotSpring(3)">-</button>
+            <span>@hotspring3Count</span>
+            <button @onclick="() => IncrementHotSpring(3)">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Temple -->
+<h2>Temple Points: @templePoints</h2>
+<div class="image-row">
+    <!-- Coin -->
+    <div class="control-container">
+        <img src="images/coin.jpg"
+             class="square-image"
+             @onclick="() => IncrementCoin()" />
+        <div class="controls">
+            <button @onclick="() => DecrementCoin()">-</button>
+            <span>@coinCount</span>
+            <button @onclick="() => IncrementCoin()">+</button>
+        </div>
+    </div>
+
+    <!-- Temple Rank -->
+    <div class="control-container">
+        <img src="images/temple.jpg"
+             class="square-image"
+             @onclick="() => IncrementTempleRank()" />
+        <div class="controls">
+            <button @onclick="() => IncrementTempleRank()">-</button>
+            <span>Temple Rank: @templeRank</span>
+            <button @onclick="() => DecrementTempleRank()">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Encounter -->
+<h2>Encounter Points: @encounterPoints</h2>
+<div class="image-row">
+    <!-- Samurai -->
+    <div class="control-container">
+        <img src="images/samurai.jpg"
+             class="rectangle-image"
+             @onclick="() => IncrementSamurai()" />
+        <div class="controls">
+            <button @onclick="() => DecrementSamurai()">-</button>
+            <span>@samuraiCount</span>
+            <button @onclick="() => IncrementSamurai()">+</button>
+        </div>
+    </div>
+
+    <!-- Non-Samurai -->
+    <div class="control-container">
+        <div class="grid-container">
+            <img src="images/encounter1.jpg" @onclick="() => IncrementNonSamurai()" />
+            <img src="images/encounter2.jpg" @onclick="() => IncrementNonSamurai()" />
+            <img src="images/encounter3.jpg" @onclick="() => IncrementNonSamurai()" />
+            <img src="images/encounter4.jpg" @onclick="() => IncrementNonSamurai()" />
+        </div>
+        <div class="controls">
+            <button @onclick="() => DecrementNonSamurai()">-</button>
+            <span>@nonSamuraiCount</span>
+            <button @onclick="() => IncrementNonSamurai()">+</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- Meal -->
+<h2>Meal Points: @mealPoints</h2>
+<div class="image-row">
+    <div class="control-container">
+        <img id="meal" src="images/meal.jpg"
+             class="rectangle-image"
+             @onclick="() => IncrementMeal()" />
+        <div class="controls">
+            <button @onclick="() => DecrementMeal()">-</button>
+            <span>@mealCount</span>
+            <button @onclick="() => IncrementMeal()">+</button>
+        </div>
+    </div>
+</div>
+
+<!-- Achievements -->
+<h2>Achievment Points: @achievementPoints</h2>
+<div class="image-row">
+    <img src="images/paddyAchievement.jpg"
+         class="@achievementSelected[0]"
+         @onclick="() => ToggleAchievementSelection(0)" />
+    <img src="images/mountainAchievement.jpg"
+         class="@achievementSelected[1]"
+         @onclick="() => ToggleAchievementSelection(1)" />
+    <img src="images/seaAchievement.jpg"
+         class="@achievementSelected[2]"
+         @onclick="() => ToggleAchievementSelection(2)" />
+    <img src="images/hotspringAchievement.jpg"
+         class="@achievementSelected[3]"
+         @onclick="() => ToggleAchievementSelection(3)" />
+    <img src="images/souvenirAchievement.jpg"
+         class="@achievementSelected[4]"
+         @onclick="() => ToggleAchievementSelection(4)" />
+    <img src="images/encounterAchievement.jpg"
+         class="@achievementSelected[5]"
+         @onclick="() => ToggleAchievementSelection(5)" />
+    <img src="images/foodAchievement.jpg"
+         class="@achievementSelected[6]"
+         @onclick="() => ToggleAchievementSelection(6)" />
+</div>
+
+<h1>Total Points: @points</h1>
+
+<style>
+    .achievement-item img {
+        width: 100px;
+        height: 200px;
+        object-fit: cover;
+        border: 2px solid gray;
+    }
+
+    .achievement-item img.selected {
+        border-color: black;
+        opacity: 1;
+    }
+
+    .achievement-item img.unselected {
+        border-color: gray;
+        opacity: 0.7;
+    }
+
+    .image-unselected {
+        border: 2px solid gray;
+        opacity: 0.7;
+        width: 100px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .image-selected {
+        border: 2px solid black;
+        opacity: 1;
+        width: 100px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .image-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .control-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .controls {
+        margin-top: 10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .controls button {
+        padding: 5px 10px;
+        font-size: 16px;
+    }
+
+    .controls span {
+        font-size: 18px;
+        min-width: 30px;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid; /* Use CSS grid layout */
+        grid-template-columns: repeat(2, 50px); /* 2 columns, each 50px wide */
+        grid-template-rows: repeat(2, 100px); /* 2 rows, each 100px tall */
+        gap: 0; /* No gaps between images */
+        width: 100px; /* Total width */
+        height: 200px; /* Total height */
+    }
+
+    .grid-container img {
+        width: 50px; /* Each image is 50px wide */
+        height: 100px; /* Each image is 100px tall */
+        object-fit: cover; /* Maintain aspect ratio and crop if needed */
+    }
+
+    .square-image {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .rectangle-image {
+        width: 100px;
+        height: 200px;
+        object-fit: cover;
+    }
+</style>
+
+@code {
+    // CSS class variables
+    private string umegaeClass = "image-unselected";
+    private string mitsukuniClass = "image-unselected";
+
+    private string[] paddySelected =
+        {
+        "image-unselected",
+        "image-unselected",
+        "image-unselected"
+    };
+    private string[] mountainSelected =
+        {
+        "image-unselected",
+        "image-unselected",
+        "image-unselected",
+        "image-unselected"
+    };
+    private string[] seaSelected =
+        {
+        "image-unselected",
+        "image-unselected",
+        "image-unselected",
+        "image-unselected",
+        "image-unselected"
+    };
+
+    private TokaidoScorer.SouvenirType[] souvTypes =
+        {
+            TokaidoScorer.SouvenirType.SmallObject,
+            TokaidoScorer.SouvenirType.Clothing,
+            TokaidoScorer.SouvenirType.Art,
+            TokaidoScorer.SouvenirType.Food
+    };
+
+    private int smallObjectCount = 0;
+    private int clothingCount = 0;
+    private int artCount = 0;
+    private int foodCount = 0;
+
+    private int hotspring2Count = 0;
+    private int hotspring3Count = 0;
+
+    private int coinCount = 0;
+    private readonly string[] templeRanks = { "1st", "2nd", "3rd", "4th", "5th" };
+    private string templeRank = "1st";
+
+    private int samuraiCount = 0;
+    private int nonSamuraiCount = 0;
+
+    private int mealCount = 0;
+
+    private TokaidoScorer.AchievementType[] achievementTypes =
+        {
+            TokaidoScorer.AchievementType.FirstPaddyPanorama,
+            TokaidoScorer.AchievementType.FirstMountainPanorama,
+            TokaidoScorer.AchievementType.FirstSeaPanorama,
+            TokaidoScorer.AchievementType.MostHotSprings,
+            TokaidoScorer.AchievementType.MostSouvenirs,
+            TokaidoScorer.AchievementType.MostEncounters,
+            TokaidoScorer.AchievementType.HighestMealCost
+    };
+
+    private string[] achievementSelected =
+        {
+        "image-unselected",
+        "image-unselected",
+        "image-unselected",
+        "image-unselected",
+        "image-unselected",
+        "image-unselected",
+        "image-unselected"
+    };
+
+    private TokaidoScorer ts = new();
+    private int points = 0;
+    private int panoPoints = 0;
+    private int souvPoints = 0;
+    private int hsPoints = 0;
+    private int templePoints = 0;
+    private int encounterPoints = 0;
+    private int mealPoints = 0;
+    private int achievementPoints = 0;
+
+    // Toggle selection for Umegae
+    private void ToggleUmegaeSelection()
+    {
+        umegaeClass = umegaeClass == "image-unselected" ? "image-selected" : "image-unselected";
+
+        if (umegaeClass == "image-selected")
+        {
+            ts.setTravelerType(TokaidoScorer.SpecialTravelerType.Umegae);
+            mitsukuniClass = "image-unselected";
+        }
+        else ts.setTravelerType(TokaidoScorer.SpecialTravelerType.None);
+        UpdatePoints();
+    }
+
+    // Toggle selection for Mitsukuni
+    private void ToggleMitsukuniSelection()
+    {
+        mitsukuniClass = mitsukuniClass == "image-unselected" ? "image-selected" : "image-unselected";
+
+        if (mitsukuniClass == "image-selected")
+        {
+            ts.setTravelerType(TokaidoScorer.SpecialTravelerType.Mitsukuni);
+            umegaeClass = "image-unselected";
+        }
+        else ts.setTravelerType(TokaidoScorer.SpecialTravelerType.None);
+        UpdatePoints();
+    }
+
+    private void TogglePaddySelection(int index)
+    {
+        // Helper to set CSS class and panorama count
+        void SetPaddyState(int count)
+        {
+            paddySelected[0] = count >= 1 ? "image-selected" : "image-unselected";
+            paddySelected[1] = count >= 2 ? "image-selected" : "image-unselected";
+            paddySelected[2] = count == 3 ? "image-selected" : "image-unselected";
+            ts.setPanoramaCount(TokaidoScorer.PanoramaType.Paddy, count);
+        }
+
+        // Toggle selection based on the index
+        if (index == 1 && paddySelected[0] == "image-selected")
+        {
+            SetPaddyState(0); // Deselect all
+        }
+        else if (index == 2 && paddySelected[1] == "image-selected")
+        {
+            SetPaddyState(1); // Deselect paddy2 and paddy3, keep paddy1
+        }
+        else if (index == 3 && paddySelected[2] == "image-selected")
+        {
+            SetPaddyState(2); // Deselect paddy3, keep paddy1 and paddy2
+        }
+        else
+        {
+            SetPaddyState(index); // Select up to the specified index
+        }
+        UpdatePoints();
+    }
+
+    private void ToggleMountainSelection(int index)
+    {
+        // Helper to set CSS class and panorama count
+        void SetMountainState(int count)
+        {
+            mountainSelected[0] = count >= 1 ? "image-selected" : "image-unselected";
+            mountainSelected[1] = count >= 2 ? "image-selected" : "image-unselected";
+            mountainSelected[2] = count >= 3 ? "image-selected" : "image-unselected";
+            mountainSelected[3] = count == 4 ? "image-selected" : "image-unselected";
+            ts.setPanoramaCount(TokaidoScorer.PanoramaType.Mountain, count);
+        }
+
+        // Toggle selection based on the index
+        if (index == 1 && mountainSelected[0] == "image-selected")
+        {
+            SetMountainState(0); // Deselect all
+        }
+        else if (index == 2 && mountainSelected[1] == "image-selected")
+        {
+            SetMountainState(1); // Deselect mountain2 and mountain3, keep mountain1
+        }
+        else if (index == 3 && mountainSelected[2] == "image-selected")
+        {
+            SetMountainState(2); // Deselect mountain3, keep mountain1 and mountain2
+        }
+        else if (index == 4 && mountainSelected[3] == "image-selected")
+        {
+            SetMountainState(3); // Deselect mountain4, keep mountain 1, mountain2, and mountain3
+        }
+        else
+        {
+            SetMountainState(index); // Select up to the specified index
+        }
+        UpdatePoints();
+    }
+
+    private void ToggleSeaSelection(int index)
+    {
+        // Helper to set CSS class and panorama count
+        void SetSeaState(int count)
+        {
+            seaSelected[0] = count >= 1 ? "image-selected" : "image-unselected";
+            seaSelected[1] = count >= 2 ? "image-selected" : "image-unselected";
+            seaSelected[2] = count >= 3 ? "image-selected" : "image-unselected";
+            seaSelected[3] = count >= 4 ? "image-selected" : "image-unselected";
+            seaSelected[4] = count == 5 ? "image-selected" : "image-unselected";
+            ts.setPanoramaCount(TokaidoScorer.PanoramaType.Sea, count);
+        }
+
+        // Toggle selection based on the index
+        if (index == 1 && seaSelected[0] == "image-selected")
+        {
+            SetSeaState(0); // Deselect all
+        }
+        else if (index == 2 && seaSelected[1] == "image-selected")
+        {
+            SetSeaState(1); // Deselect sea2 and sea3, keep sea1
+        }
+        else if (index == 3 && seaSelected[2] == "image-selected")
+        {
+            SetSeaState(2); // Deselect sea3, keep sea1 and sea2
+        }
+        else if (index == 4 && seaSelected[3] == "image-selected")
+        {
+            SetSeaState(3); // Deselect sea4, keep sea 1, sea2, and sea3
+        }
+        else if (index == 5 && seaSelected[4] == "image-selected")
+        {
+            SetSeaState(4); // Deselect sea5, keep sea 1, sea2, sea3, and sea4
+        }
+        else
+        {
+            SetSeaState(index); // Select up to the specified index
+        }
+        UpdatePoints();
+    }
+
+    // Increment souvenir count
+    private void IncrementSouvenir(int index)
+    {
+        var type = souvTypes[index];
+        ts.setSouvenirCount(type, ts.getSouvenirCount(type) + 1);
+        UpdatePoints();
+        UpdateCounts();
+    }
+
+    // Decrement souvenir count
+    private void DecrementSouvenir(int index)
+    {
+        var type = souvTypes[index];
+        int currentCount = ts.getSouvenirCount(type);
+        if (currentCount > 0) // Prevent negative counts
+        {
+            ts.setSouvenirCount(type, currentCount - 1);
+            UpdatePoints();
+            UpdateCounts();
+        }
+    }
+
+
+    private void IncrementHotSpring(int pointValue)
+    {
+        ts.setHotSpringCount(pointValue, ts.getHotSpringCount(pointValue) + 1);
+        UpdatePoints();
+        UpdateCounts();
+    }
+
+    private void DecrementHotSpring(int pointValue)
+    {
+        if (ts.getHotSpringCount(pointValue) > 0)
+        {
+            ts.setHotSpringCount(pointValue, ts.getHotSpringCount(pointValue) - 1);
+            UpdatePoints();
+            UpdateCounts();
+        }
+    }
+
+    private void IncrementCoin()
+    {
+        coinCount++;
+        ts.setTempleCoinCount(coinCount);
+        UpdatePoints();
+    }
+
+    private void DecrementCoin()
+    {
+        if (coinCount > 0)
+        {
+            coinCount--;
+            ts.setTempleCoinCount(coinCount);
+        }
+        UpdatePoints();
+    }
+
+    private void IncrementTempleRank()
+    {
+        int currentRank = ts.getTempleRank();
+
+        if (currentRank > 1)
+        {
+            ts.setTempleRank(currentRank - 1);
+        }
+        UpdatePoints();
+        UpdateCounts();
+    }
+
+
+    private void DecrementTempleRank()
+    {
+        int currentRank = ts.getTempleRank();
+
+        if (currentRank < 5)
+        {
+            ts.setTempleRank(currentRank + 1);
+        }
+        UpdatePoints();
+        UpdateCounts();
+    }
+
+    private void IncrementSamurai()
+    {
+        ts.setSamuraiEncounterCount(ts.getSamuraiEncounterCount() + 1);
+        UpdatePoints();
+        UpdateCounts();
+    }
+
+    private void DecrementSamurai()
+    {
+        if (ts.getSamuraiEncounterCount() > 0)
+        {
+            ts.setSamuraiEncounterCount(ts.getSamuraiEncounterCount() - 1);
+        }
+        UpdatePoints();
+        UpdateCounts();
+    }
+
+    private void IncrementNonSamurai()
+    {
+        ts.setNonSamuraiEncounterCount(ts.getNonSamuraiEncounterCount() + 1);
+        UpdatePoints();
+        UpdateCounts();
+    }
+
+    private void DecrementNonSamurai()
+    {
+        if (ts.getNonSamuraiEncounterCount() > 0)
+        {
+            ts.setNonSamuraiEncounterCount(ts.getNonSamuraiEncounterCount() - 1);
+        }
+        UpdatePoints();
+        UpdateCounts();
+    }
+
+    private void IncrementMeal()
+    {
+        mealCount++;
+        ts.setMealCount(mealCount);
+        UpdatePoints();
+    }
+
+    private void DecrementMeal()
+    {
+        if (mealCount > 0)
+        {
+            mealCount--;
+            ts.setMealCount(mealCount);
+        }
+        UpdatePoints();
+    }
+
+    private void ToggleAchievementSelection(int index)
+    {
+        var achievement = achievementTypes[index];
+        bool currentStatus = ts.getAchievement(achievement);
+        ts.setAchievement(achievement, !currentStatus);
+        achievementSelected[index] = achievementSelected[index] == "image-selected" ? "image-unselected" : "image-selected";
+        UpdatePoints();
+    }
+
+    private void UpdatePoints()
+    {
+        points = ts.getTotalScore();
+        panoPoints = ts.getTotalPanoramaScore();
+        souvPoints = ts.getTotalSouvenirScore();
+        hsPoints = ts.getTotalHotSpringScore();
+        templePoints = ts.getTotalTempleScore();
+        encounterPoints = ts.getTotalEncounterScore();
+        mealPoints = ts.getTotalMealScore();
+        achievementPoints = ts.getTotalAchievementScore();
+    }
+
+    private void UpdateCounts()
+    {
+        hotspring2Count = ts.getHotSpringCount(2);
+        hotspring3Count = ts.getHotSpringCount(3);
+        smallObjectCount = ts.getSouvenirCount(TokaidoScorer.SouvenirType.SmallObject);
+        clothingCount = ts.getSouvenirCount(TokaidoScorer.SouvenirType.Clothing);
+        artCount = ts.getSouvenirCount(TokaidoScorer.SouvenirType.Art);
+        foodCount = ts.getSouvenirCount(TokaidoScorer.SouvenirType.Food);
+        templeRank = templeRanks[ts.getTempleRank() - 1];
+        nonSamuraiCount = ts.getNonSamuraiEncounterCount();
+        samuraiCount = ts.getSamuraiEncounterCount();
+    }
+}

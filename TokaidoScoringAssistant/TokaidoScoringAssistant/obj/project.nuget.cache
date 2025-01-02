@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vlIPJtqv7Hz63nlujBhMgJBZqFXNaO8kq/kJiW1ZrXyKZ5yGCkiQwOV5ig7JzF1oREXUFD0wKHFo3hIDlQPIMg==",
+  "dgSpecHash": "v/OFo5IiYQPJ/pPh0fW1Lm8WUCHlubl3JA3nCxxStzWaIot+9/POwOjvlPqpMnUFM+oFOG47SKb3H/KOO3SE7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\TokaidoScoringAssistant.csproj",
+  "projectFilePath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\TokaidoScoringAssistant.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\suzuk\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.1\\microsoft.aspnetcore.authorization.8.0.1.nupkg.sha512",
     "C:\\Users\\suzuk\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.1\\microsoft.aspnetcore.components.8.0.1.nupkg.sha512",

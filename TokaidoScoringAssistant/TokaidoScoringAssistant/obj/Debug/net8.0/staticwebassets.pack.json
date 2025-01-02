@@ -1,24 +1,164 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TokaidoScoringAssistant.bundle.scp.css",
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TokaidoScoringAssistant.bundle.scp.css",
       "PackagePath": "staticwebassets\\TokaidoScoringAssistant.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\app.css",
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\favicon.png",
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\art.jpg",
+      "PackagePath": "staticwebassets\\images\\art.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\clothing.jpg",
+      "PackagePath": "staticwebassets\\images\\clothing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\coin.jpg",
+      "PackagePath": "staticwebassets\\images\\coin.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\encounter1.jpg",
+      "PackagePath": "staticwebassets\\images\\encounter1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\encounter2.jpg",
+      "PackagePath": "staticwebassets\\images\\encounter2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\encounter3.jpg",
+      "PackagePath": "staticwebassets\\images\\encounter3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\encounter4.jpg",
+      "PackagePath": "staticwebassets\\images\\encounter4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\encounterAchievement.jpg",
+      "PackagePath": "staticwebassets\\images\\encounterAchievement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\food.jpg",
+      "PackagePath": "staticwebassets\\images\\food.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\foodAchievement.jpg",
+      "PackagePath": "staticwebassets\\images\\foodAchievement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\hotspring2.jpg",
+      "PackagePath": "staticwebassets\\images\\hotspring2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\hotspring3.jpg",
+      "PackagePath": "staticwebassets\\images\\hotspring3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\hotspringAchievement.jpg",
+      "PackagePath": "staticwebassets\\images\\hotspringAchievement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\meal.jpg",
+      "PackagePath": "staticwebassets\\images\\meal.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\mitsukuni.jpg",
+      "PackagePath": "staticwebassets\\images\\mitsukuni.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\mountain1.jpg",
+      "PackagePath": "staticwebassets\\images\\mountain1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\mountain2.jpg",
+      "PackagePath": "staticwebassets\\images\\mountain2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\mountain3.jpg",
+      "PackagePath": "staticwebassets\\images\\mountain3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\mountain4.jpg",
+      "PackagePath": "staticwebassets\\images\\mountain4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\mountainAchievement.jpg",
+      "PackagePath": "staticwebassets\\images\\mountainAchievement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\paddy1.jpg",
+      "PackagePath": "staticwebassets\\images\\paddy1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\paddy2.jpg",
+      "PackagePath": "staticwebassets\\images\\paddy2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\paddy3.jpg",
+      "PackagePath": "staticwebassets\\images\\paddy3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\paddyAchievement.jpg",
+      "PackagePath": "staticwebassets\\images\\paddyAchievement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\samurai.jpg",
+      "PackagePath": "staticwebassets\\images\\samurai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\sea1.jpg",
+      "PackagePath": "staticwebassets\\images\\sea1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\sea2.jpg",
+      "PackagePath": "staticwebassets\\images\\sea2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\sea3.jpg",
+      "PackagePath": "staticwebassets\\images\\sea3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\sea4.jpg",
+      "PackagePath": "staticwebassets\\images\\sea4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\sea5.jpg",
+      "PackagePath": "staticwebassets\\images\\sea5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\seaAchievement.jpg",
+      "PackagePath": "staticwebassets\\images\\seaAchievement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\smallObjects.jpg",
+      "PackagePath": "staticwebassets\\images\\smallObjects.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\souvenirAchievement.jpg",
+      "PackagePath": "staticwebassets\\images\\souvenirAchievement.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\temple.jpg",
+      "PackagePath": "staticwebassets\\images\\temple.jpg"
+    },
+    {
+      "Id": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\wwwroot\\images\\umegae.jpg",
+      "PackagePath": "staticwebassets\\images\\umegae.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.TokaidoScoringAssistant.Microsoft.AspNetCore.StaticWebAssets.props",

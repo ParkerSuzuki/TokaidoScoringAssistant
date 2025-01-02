@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TokaidoScoringAssistant.Client")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cdbb0451f4368930956e2717397f792f59e34066")]
 [assembly: System.Reflection.AssemblyProductAttribute("TokaidoScoringAssistant.Client")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TokaidoScoringAssistant.Client")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

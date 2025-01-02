@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "TokaidoScoringAssistant.Client",
   "resources": {
-    "hash": "sha256-7IhEMyMP8tRj5vLYQW0G55xwmPKlNGr+p69IJdzdaho=",
+    "hash": "sha256-pG42ggHxVKw5O87Rc2yHowPIICIP7VJZjbGalsU19Q4=",
     "jsModuleNative": {
       "dotnet.native.8.0.1.55ko6u829n.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-EpWTfh4m/hEcXRFYMCR9YeYHwdUJgcm1laBaxWfq2S4=",
       "netstandard.wasm": "sha256-2kH24/YfHmU3B4eYRyRmiwebYROM4+B9eDWKvMnUdP8=",
       "System.Private.CoreLib.wasm": "sha256-CsySKiP7HYY1pS8LTDE60EkqiX5oHb3WoEZHDNd1yK0=",
-      "TokaidoScoringAssistant.Client.wasm": "sha256-t4aJXcIhfAxJ+8BaR6i6RYM1U/pKuAi0TsMNaGEGjiw="
+      "TokaidoScoringAssistant.Client.wasm": "sha256-i59I+rto6g1/UaeEqW1jI+l8s5Z1rhDKWVcHWdgQ67c="
     },
     "pdb": {
-      "TokaidoScoringAssistant.Client.pdb": "sha256-Z9hEEV5mFC6Vpgi91xqwy+aya8bhLqKF7R0XfSybzuY="
+      "TokaidoScoringAssistant.Client.pdb": "sha256-knASUt8aT6X3nyC0AhQeoce68yREauGdGTrYYq4l76E="
     }
   },
   "cacheBootResources": true,

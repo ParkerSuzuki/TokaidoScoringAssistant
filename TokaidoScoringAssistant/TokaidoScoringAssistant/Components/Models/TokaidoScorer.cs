@@ -1,5 +1,5 @@
 ﻿using System;
-
+namespace TokaidoScorer;
 public class TokaidoScorer
 {
     /// <summary>
@@ -7,7 +7,7 @@ public class TokaidoScorer
     /// </summary>
     public enum PanoramaType
     {
-        Paddy
+        Paddy,
 		Mountain,
 		Sea
 	}
@@ -34,7 +34,7 @@ public class TokaidoScorer
         MostHotSprings,
         MostSouvenirs,
         MostEncounters,
-        HigestMealCost
+        HighestMealCost
     }
 
     /// <summary>
@@ -60,7 +60,7 @@ public class TokaidoScorer
     private int hotSpring3Count = 0;
 
     private int templeCoinCount = 0;
-    private int templeRank = 0;
+    private int templeRank = 1;
 
     private int samuraiEncounterCount = 0;
     private int nonSamuraiEncounterCount = 0;
@@ -167,7 +167,7 @@ public class TokaidoScorer
     /// <param name="souvenir">The type of souvenir.</param>
     /// <param name="souvenirCount">The number of souvenirs collected.</param>
     /// <exception cref="ArgumentException">Thrown if input is invalid.</exception>
-    public int setSouvenirCount(SouvenirType souvenir, int souvenirCount) 
+    public void setSouvenirCount(SouvenirType souvenir, int souvenirCount) 
     {
         // Validate input
         if (souvenirCount < 0)
@@ -189,7 +189,7 @@ public class TokaidoScorer
                 break;
             case SouvenirType.Food:
                 foodSouvenirCount = souvenirCount;
-                break
+                break;
             default:
                 throw new ArgumentException("Invalid souvenir type used");
         }
@@ -336,6 +336,7 @@ public class TokaidoScorer
                 break;
             default:
                 templeRankPoints = 0;
+                break;
         }
 
         return templeCoinCount + templeRankPoints;
@@ -431,7 +432,7 @@ public class TokaidoScorer
         switch (achievement) 
         {
             case AchievementType.FirstPaddyPanorama:
-                firstMountainPanorama = playerHas; 
+                firstPaddyPanorama = playerHas; 
                 break;
             case AchievementType.FirstMountainPanorama:
                 firstMountainPanorama = playerHas;
@@ -448,7 +449,7 @@ public class TokaidoScorer
             case AchievementType.MostEncounters:
                 mostEncounters = playerHas;
                 break;
-            case AchievementType.HigestMealCost:
+            case AchievementType.HighestMealCost:
                 highestMealCost = playerHas;
                 break;
             default:
@@ -478,7 +479,7 @@ public class TokaidoScorer
                 return mostSouvenirs;
             case AchievementType.MostEncounters:
                 return mostEncounters;
-            case AchievementType.HigestMealCost:
+            case AchievementType.HighestMealCost:
                 return highestMealCost;
             default:
                 throw new ArgumentException("Invalid AchievementType used");

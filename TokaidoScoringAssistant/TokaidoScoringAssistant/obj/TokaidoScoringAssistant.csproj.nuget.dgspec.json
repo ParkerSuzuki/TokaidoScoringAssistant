@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\TokaidoScoringAssistant.csproj": {}
+    "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\TokaidoScoringAssistant.csproj": {}
   },
   "projects": {
-    "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\TokaidoScoringAssistant.Client.csproj": {
+    "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\TokaidoScoringAssistant.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\TokaidoScoringAssistant.Client.csproj",
+        "projectUniqueName": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\TokaidoScoringAssistant.Client.csproj",
         "projectName": "TokaidoScoringAssistant.Client",
-        "projectPath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\TokaidoScoringAssistant.Client.csproj",
+        "projectPath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\TokaidoScoringAssistant.Client.csproj",
         "packagesPath": "C:\\Users\\suzuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\obj\\",
+        "outputPath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -93,14 +93,14 @@
         }
       }
     },
-    "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\TokaidoScoringAssistant.csproj": {
+    "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\TokaidoScoringAssistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\TokaidoScoringAssistant.csproj",
+        "projectUniqueName": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\TokaidoScoringAssistant.csproj",
         "projectName": "TokaidoScoringAssistant",
-        "projectPath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\TokaidoScoringAssistant.csproj",
+        "projectPath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\TokaidoScoringAssistant.csproj",
         "packagesPath": "C:\\Users\\suzuk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\obj\\",
+        "outputPath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -122,8 +122,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\TokaidoScoringAssistant.Client.csproj": {
-                "projectPath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\TokaidoScoringAssistant.Client.csproj"
+              "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\TokaidoScoringAssistant.Client.csproj": {
+                "projectPath": "C:\\Users\\suzuk\\Documents\\YearOf52\\ProgrammingProjects\\1-TSA\\TokaidoScoringAssistant\\TokaidoScoringAssistant.Client\\TokaidoScoringAssistant.Client.csproj"
               }
             }
           }
